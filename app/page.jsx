@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <main>
-      <div className="my-10">
+      <div className="mb-10">
        <Banner></Banner>
        <OurClints></OurClints>
        <OurServices></OurServices>

@@ -1,5 +1,18 @@
 // Import React if you're using it directly in Next.js components
 import { FaWhatsapp } from "react-icons/fa";
+import banner01 from '../../public/assets/images/banner-image01.jpg'
+import banner02 from '../../public/assets/images/banner-img02.jpg'
+import banner03 from '../../public/assets/images/banner-img03.jpg'
+import banner04 from '../../public/assets/images/banner-img04.jpg'
+import banner05 from '../../public/assets/images/banner-img05.jpg'
+import banner06 from '../../public/assets/images/banner-img06.jpg'
+import banner07 from '../../public/assets/images/banner-img07.jpg'
+import banner08 from '../../public/assets/images/banner-img08.jpg'
+import banner09 from '../../public/assets/images/banner-img09.jpg'
+import Image from "next/image";
+
+
+
 
 const Banner = () => {
     return (
@@ -18,6 +31,85 @@ const Banner = () => {
                     WhatsApp
                 </button>
             </div>
+
+            {/* -----------galary section----------- */}
+
+            <div className="grid grid-cols-3 w-11/12 mx-auto absolute mt-72">
+
+                <div className="flex">
+
+                <div className="flex justify-end items-end gap-4">
+               <div>
+               <div className="flex items-end">
+               <div className="bg-red-500 w-44 h-64 rounded-tr-[40%] bg-[url('https://i.ibb.co.com/m8Mc86D/banner-img09.jpg')] bg-cover bg-center">
+               </div>
+               
+               <div className="bg-[#25d366] w-32 ml-4 h-44 rounded-bl-[40%] mt-4 flex justify-center">
+
+               <h3 className="flex flex-col justify-center font-semibold text-center text-md  text-white"> <span className="text-4xl font-bold">30+</span> Tech Stack</h3>
+
+
+               </div>
+               </div>
+               <div className="bg-red-500 w-80 h-40 rounded-tr-[40%] mt-4 bg-[url('https://i.ibb.co.com/Bf46cbB/banner-img08.jpg')] bg-cover bg-center">
+               </div>
+               </div>
+
+               <div>
+               <div className="bg-blue-500 w-44 h-36 mb-4 rounded-tl-[50%] rounded-br-[50%] bg-[url('https://i.ibb.co.com/f9vSY9b/banner-img02.jpg')] bg-cover bg-center">
+               </div>
+               <div className="bg-[#25d366] w-52 h-40 rounded-tr-[50%] flex justify-center">
+
+               <h3 className="flex flex-col justify-center font-semibold text-center text-lg  text-white"> <span className="text-5xl font-bold">4+</span> Experience</h3>
+
+
+               </div>
+               </div>
+               <div className="bg-blue-500 w-44 h-64 rounded-tr-[50%] bg-[url('https://i.ibb.co.com/rQP1M4N/banner-img03.jpg')] bg-cover bg-center">
+               </div>
+
+               <div>
+               <div className="bg-green-500 w-40 h-28 rounded-tr-[50%] rounded-bl-[40%] bg-[url('https://i.ibb.co.com/LgTxgpL/banner-image01.jpg')] bg-cover bg-right-top">
+               </div>
+               <div className="bg-blue-500 mt-4 w-40 h-36 rounded-tl-[50%] flex justify-center">
+
+               <h3 className="flex flex-col justify-center font-semibold text-center text-md  text-white"> <span className="text-4xl font-bold">20+</span>Projects</h3>
+
+
+               </div>
+               </div>
+
+               <div>
+              <div className="flex gap-4">
+              <div className="bg-blue-500 mt-4 w-32 h-40 rounded-br-[50%] flex justify-center">
+
+               <h3 className="flex flex-col justify-center font-semibold text-center text-md  text-white"> <span className="text-4xl font-bold">10+</span> Company</h3>
+
+               </div>
+               <div className="bg-gray-500 mt-4 w-36 h-40 rounded-bl-[50%] rounded-tr-[50%]  bg-[url('https://i.ibb.co.com/fkqRFXm/banner-img04.jpg')] bg-cover bg-left">
+               </div>
+              </div>
+               <div className="bg-gray-500 mt-4 w-72 h-36 rounded-tl-[50%] bg-[url('https://i.ibb.co.com/gtpqNt8/img-12.jpg')] bg-cover bg-bottom">
+               </div>
+               </div>
+
+               {/* last */}
+               <div>
+               <div className="bg-red-500 mt-4 w-44 h-64 rounded-tl-[40%] bg-[url('https://i.ibb.co.com/zFTq6QD/banner-img06.jpg')] bg-cover bg-center">
+               </div>
+               <div className="bg-red-500 mt-4 w-44 h-36 rounded-tr-[50%] bg-[url('https://i.ibb.co.com/TTzyyjY/image-10.jpg')] bg-cover bg-center">
+               </div>
+               </div>
+
+
+                </div>
+
+             
+                </div>
+
+                
+            </div>
+
         </div>
     );
 };
