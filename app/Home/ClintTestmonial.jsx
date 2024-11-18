@@ -7,7 +7,7 @@ const ClintTestmonial = () => {
     return (
         <div>
              <div className="mt-20 w-10/12 flex flex-col justify-items-center justify-center items-center h-[90vh] mx-auto">
-            <h1 className="text-3xl font-semibold text-center">Clint Testmonial</h1>
+            <h1 className="text-4xl font-semibold text-center">Clint Testmonial</h1>
            
         
         {/* clint 01 */}

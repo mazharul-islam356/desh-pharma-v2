@@ -7,6 +7,7 @@ import OurClints from "./Home/OurClints";
 import OurServices from "./Home/OurServices";
 import OurProjects from "./Home/OurProjects";
 import ClintTestmonial from "./Home/ClintTestmonial";
+import Certificate from "./Home/Certificate";
 
 
 
@@ -25,6 +26,7 @@ export default function Home() {
        <OurServices></OurServices>
        <OurProjects></OurProjects>
        <ClintTestmonial></ClintTestmonial>
+       <Certificate></Certificate>
 
       
 

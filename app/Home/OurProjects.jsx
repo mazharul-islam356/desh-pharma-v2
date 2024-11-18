@@ -5,8 +5,8 @@ import projectImage from '../../public/assets/images/image01.jpg'
 const OurProjects = () => {
     return (
         <div>
-            <div className="mt-10 w-11/12 mx-auto">
-            <h1 className="font-semibold text-3xl text-center">Our Recent Projects</h1>
+            <div className="mt-20 w-11/12 mx-auto">
+            <h1 className="font-semibold text-4xl text-center">Our Recent Projects</h1>
 
 
             {/* -----project 01------ */}

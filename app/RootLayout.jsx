@@ -1,7 +1,9 @@
 'use client';
 import "./globals.css";
 import { Button, IconButton, Navbar, Typography } from "@material-tailwind/react";
+import Image from "next/image";
 import { useEffect, useState } from "react";
+import logo from '../public/assets/images/logo (2).png'
 
 export default function RootLayout({ children }) {
   const [openNav, setOpenNav] = useState(false);
@@ -36,10 +38,10 @@ export default function RootLayout({ children }) {
       <body>
         <nav>
           <div className="mt-6">
-            <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-3xl border-blue-400 px-4 lg:px-8 lg:py-3 py-4 w-10/12 mx-auto">
+            <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-3xl px-4 lg:px-8 lg:py-3 py-4 w-10/12 mx-auto">
               <div className="flex items-center justify-between text-blue-gray-900">
                 <div className="font-semibold flex items-center">
-                  Squad Innovators
+                  <Image width={50} height={50} alt="logo" src={logo}></Image>
                 </div>
 
                 <div className="hidden lg:flex items-center">{navList}</div>
