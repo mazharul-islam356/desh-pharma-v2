@@ -8,6 +8,8 @@ import OurServices from "./Home/OurServices";
 import OurProjects from "./Home/OurProjects";
 import ClintTestmonial from "./Home/ClintTestmonial";
 import Certificate from "./Home/Certificate";
+import FAQ from "./Home/FAQ";
+import TechStack from "./Home/TechStack";
 
 
 
@@ -27,6 +29,8 @@ export default function Home() {
        <OurProjects></OurProjects>
        <ClintTestmonial></ClintTestmonial>
        <Certificate></Certificate>
+       <TechStack></TechStack>
+       <FAQ></FAQ>
 
       
 

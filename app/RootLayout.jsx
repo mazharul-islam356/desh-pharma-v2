@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
 
                 <div className="flex items-center gap-4">
                   <Button variant="gradient" size="sm" className="hidden lg:inline-block">
-                    <span>Let's Talk</span>
+                    <span>Let&apos;s Talk</span>
                   </Button>
                   <IconButton
                     variant="text"
