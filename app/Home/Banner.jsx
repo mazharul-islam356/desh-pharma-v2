@@ -1,6 +1,6 @@
 // Import React if you're using it directly in Next.js components
 import Image from "next/image";
-import { FaWhatsapp } from "react-icons/fa";
+
 import { LuMessageSquare } from "react-icons/lu";
 import banner from '../../public/assets/images/banner.png'
 

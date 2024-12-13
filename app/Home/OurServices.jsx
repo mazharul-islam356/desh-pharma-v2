@@ -1,11 +1,7 @@
-import appDevelopment from '../../public/assets/images/mobile-development.png'
-import softwareDevelopment from '../../public/assets/images/experiments.png'
-import uiUXDesign from '../../public/assets/images/web-design.png'
-import webDevelopment from '../../public/assets/images/coding.png'
-import eCommerce from '../../public/assets/images/online-store.png'
-import saas from '../../public/assets/images/saas.png'
-import Image from "next/image";
+
 import { GiMedicines } from "react-icons/gi";
+import { ClipboardList, Clock, ShieldPlus, Stethoscope } from 'lucide-react'
+import { FaShuttleVan } from 'react-icons/fa'
 
 
 const OurServices = () => {
@@ -21,52 +17,60 @@ const OurServices = () => {
        
 
     {/* card 01 */}
-      <div className='lg:w-80 h-60 border px-6 py-10 rounded-2xl hover:shadow-md transition  ease-linear drop-shadow-md hover:shadow-blue-400 flex flex-col justify-center justify-items-center'>
-        <div className='flex gap-3 items-center justify-center justify-items-center'>
+      <div className='lg:w-[25rem] h-64 border px-6 py-10 rounded-2xl hover:shadow-md transition  ease-linear drop-shadow-md hover:shadow-[#00a99d] flex flex-col justify-center justify-items-start'>
+        <div className='flex gap-2 items-center justify-start justify-items-start mb-2'>
         <GiMedicines  className='text-3xl'></GiMedicines>
-        <h1 className='text-xl font-semibold mt-3 text-center'>Prescription Filling</h1>
+        <h1 className='text-2xl font-semibold  text-start'>Prescription Filling</h1>
         </div>
-       <p>Quick and accurate prescription filling by our expert pharmacists.</p>
+       <p className='text-justify'>Quick and accurate prescription filling by our expert pharmacists. We ensure you get the right medication with proper instructions. Your health is our top priority.</p>
       </div>
 
     {/* card 02 */}
-    <div className='lg:w-96 h-72 border px-8 py-10 rounded-2xl hover:shadow-md transition  ease-linear drop-shadow-md hover:shadow-blue-400 flex flex-col justify-center justify-items-center'>
-        <Image alt="software_development" src={softwareDevelopment} width={60}></Image>
-       <h1 className='text-2xl font-semibold mt-3'>Software Development</h1>
-       <p>Custom-built software solutions that streamline your operations, solve unique challenges, and fuel your growth.</p>
+      <div className='lg:w-[25rem] h-64 border px-6 py-10 rounded-2xl hover:shadow-md transition  ease-linear drop-shadow-md hover:shadow-[#00a99d] flex flex-col justify-center justify-items-start'>
+        <div className='flex gap-2 items-center justify-start justify-items-start mb-2'>
+        <Stethoscope   className='text-3xl'></Stethoscope>
+        <h1 className='text-2xl font-semibold  text-start'>Health Consultations</h1>
+        </div>
+       <p className='text-justify'>Free health consultations with our knowledgeable staff. Get expert advice on managing your health conditions. We&apos;re here to support your wellness journey.</p>
       </div>
 
-    {/* card 03 */}
-    <div className='lg:w-96 h-72 border px-8 py-10 rounded-2xl hover:shadow-md transition  ease-linear drop-shadow-md hover:shadow-blue-400 flex flex-col justify-center justify-items-center'>
-        <Image alt="UI/UX_design" src={uiUXDesign} width={60}></Image>
-       <h1 className='text-2xl font-semibold mt-3'>UI/UX Design</h1>
-       <p>We create digital experiences that users love. Intuitive, engaging designs that turn first-time visitors into loyal customers.</p>
+      {/* card 03 */}
+      <div className='lg:w-[25rem] h-64 border px-6 py-10 rounded-2xl hover:shadow-md transition  ease-linear drop-shadow-md hover:shadow-[#00a99d] flex flex-col justify-center justify-items-start'>
+        <div className='flex gap-2 items-center justify-start justify-items-start mb-2'>
+        <Clock className='text-3xl'></Clock>
+        <h1 className='text-2xl font-semibold  text-start'>24/7 Service</h1>
+        </div>
+       <p className='text-justify'>We&apos;re open 24/7 to serve you in times of need. Our round-the-clock service ensures you always have access to essential medications. Your health doesn&apos;t wait, neither do we.</p>
       </div>
 
-    {/* card 04 */}
-
-    <div className='lg:w-96 h-72 border px-8 py-10 rounded-2xl hover:shadow-md transition  ease-linear drop-shadow-md hover:shadow-blue-400 flex flex-col justify-center justify-items-center'>
-        <Image alt="web_development" src={webDevelopment} width={60}></Image>
-       <h1 className='text-2xl font-semibold mt-3'>Web Development</h1>
-       <p>Cutting-edge web development delivering fast, secure, and user-friendly websites that boost business growth and provide exceptional online experiences.
-       </p>
+      {/* card 04 */}
+      <div className='lg:w-[25rem]h-64 border px-6 py-10 rounded-2xl hover:shadow-md transition  ease-linear drop-shadow-md hover:shadow-[#00a99d] flex flex-col justify-center justify-items-start'>
+        <div className='flex gap-2 items-center justify-start justify-items-start mb-2'>
+        <FaShuttleVan className='text-3xl'></FaShuttleVan>
+        <h1 className='text-2xl font-semibold  text-start'>Home Delivery</h1>
+        </div>
+       <p className='text-justify'>Convenient home delivery for your medications and health products. We bring your prescriptions right to your doorstep. Stay safe and healthy without leaving your home.</p>
       </div>
-   
 
       {/* card 05 */}
-
-      <div className='lg:w-96 h-72 border px-8 py-10 rounded-2xl hover:shadow-md transition  ease-linear drop-shadow-md hover:shadow-blue-400 flex flex-col justify-center justify-items-center'>
-        <Image alt="app_development" src={eCommerce} width={60}></Image>
-       <h1 className='text-2xl font-semibold mt-3'>eCommerce</h1>
-       <p>Turn your online store into a sales powerhouse. We build eCommerce platforms that showcase your products, convert visitors, and grow your brand.</p>
+      <div className='lg:w-[25rem] h-64 border px-6 py-10 rounded-2xl hover:shadow-md transition  ease-linear drop-shadow-md hover:shadow-[#00a99d] flex flex-col justify-center justify-items-start'>
+        <div className='flex gap-2 items-center justify-start justify-items-start mb-2'>
+        <ShieldPlus    className='text-3xl'></ShieldPlus>
+        <h1 className='text-2xl font-semibold  text-start'>Medical Equipment Rental</h1>
+        </div>
+       <p className='text-justify'>Rent medical equipment for home care needs. We offer a wide range of equipment to support your recovery. Our team ensures you get the right equipment for your specific needs.</p>
       </div>
 
       {/* card 06 */}
-      <div className='lg:w-96 h-72 border px-8 py-10 rounded-2xl hover:shadow-md transition  ease-linear drop-shadow-md hover:shadow-blue-400 flex flex-col justify-center justify-items-center'>
-        <Image alt="saas_development" src={saas} width={70}></Image>
-       <h1 className='text-2xl font-semibold mt-3'>SaaS Development</h1>
-       <p>Scalable SaaS solutions that streamline your business, expand your reach, and boost customer satisfaction.</p>
+      <div className='lg:w-[25rem] h-64 border px-6 py-10 rounded-2xl hover:shadow-md transition  ease-linear drop-shadow-md hover:shadow-[#00a99d] flex flex-col justify-center justify-items-start'>
+        <div className='flex gap-2 items-center justify-start justify-items-start mb-2'>
+        <ClipboardList className='text-3xl'></ClipboardList>
+        <h1 className='text-2xl font-semibold  text-start'>Medication Management</h1>
+        </div>
+       <p className='text-justify'>Comprehensive medication management services. We help you keep track of your prescriptions and dosages. Our pharmacists work with you to optimize your medication regimen.</p>
       </div>
+
+   
 
 
       </div>
