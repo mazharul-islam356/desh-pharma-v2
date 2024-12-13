@@ -6,6 +6,7 @@ import Footer from "./Home/Footer";
 import WhyChoseUs from "./Home/WhyChoseUs";
 import Commitment from "./Home/Commitment";
 import HelthTips from "./Home/HelthTips";
+import Contact from "./Home/Contact";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <HelthTips></HelthTips>
         <Commitment></Commitment>
         <FAQ></FAQ>
+        <Contact></Contact>
         <Footer></Footer>
       </div>
     </main>

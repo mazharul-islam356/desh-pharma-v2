@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
 
   const navList = (
     <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 lg:mr-20">
-      {['Home', 'Products', 'Services', 'Blogs'].map((text) => (
+      {['Home', 'Services', 'Health Tips', 'FAQ'].map((text) => (
         <Typography
           key={text}
           variant="small"
