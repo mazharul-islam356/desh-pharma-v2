@@ -5,6 +5,7 @@ import webDevelopment from '../../public/assets/images/coding.png'
 import eCommerce from '../../public/assets/images/online-store.png'
 import saas from '../../public/assets/images/saas.png'
 import Image from "next/image";
+import { GiMedicines } from "react-icons/gi";
 
 
 const OurServices = () => {
@@ -20,10 +21,12 @@ const OurServices = () => {
        
 
     {/* card 01 */}
-      <div className='lg:w-96 h-72 border px-8 py-10 rounded-2xl hover:shadow-md transition  ease-linear drop-shadow-md hover:shadow-blue-400 flex flex-col justify-center justify-items-center'>
-        <Image alt="app_development" src={appDevelopment} width={70}></Image>
-       <h1 className='text-2xl font-semibold mt-3'>Mobile App Development</h1>
-       <p>High-performance mobile apps for iOS and Android that accelerate your business growth and delight your users.</p>
+      <div className='lg:w-80 h-60 border px-6 py-10 rounded-2xl hover:shadow-md transition  ease-linear drop-shadow-md hover:shadow-blue-400 flex flex-col justify-center justify-items-center'>
+        <div className='flex gap-3 items-center justify-center justify-items-center'>
+        <GiMedicines  className='text-3xl'></GiMedicines>
+        <h1 className='text-xl font-semibold mt-3 text-center'>Prescription Filling</h1>
+        </div>
+       <p>Quick and accurate prescription filling by our expert pharmacists.</p>
       </div>
 
     {/* card 02 */}
