@@ -5,6 +5,8 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import logo from '../public/assets/images/logo.png'
 import Banner from "./Home/Banner";
+import Link from "next/link";
+import { PiPhoneCallBold } from "react-icons/pi";
 
 export default function RootLayout({ children }) {
   const [openNav, setOpenNav] = useState(false);
@@ -19,12 +21,12 @@ export default function RootLayout({ children }) {
 
   const navList = (
     <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 lg:mr-20">
-      {['Home', 'Services', 'Health Tips', 'FAQ'].map((text) => (
+      {['Home', 'Services', 'Contact', 'FAQ'].map((text) => (
         <Typography
           key={text}
           variant="small"
          
-          className="p-1 font-semibold text-[#000000]"
+          className="p-1 font-semibold transition ease-in-out hover:text-[#00a89d] text-gray-900"
         >
           <a href="#" className="flex items-center">
             {text}
@@ -40,7 +42,7 @@ export default function RootLayout({ children }) {
         <nav>
           <div>
           
-            <Navbar className="shadow-sm border border-gray-300 relative top-4 bg-transparent z-10 h-max max-w-full  px-5 lg:px-8 lg:py-3 py-4 w-11/12 mx-auto">
+            <Navbar className="shadow-sm border border-gray-300 relative top-4 bg-transparent z-10 h-max max-w-full  px-5 lg:px-8 lg:py-4 py-4 w-11/12 mx-auto">
               <div className="flex items-center justify-between text-blue-gray-800">
                 <div className="font-semibold flex items-center">
                   <Image width={150} alt="logo" src={logo}></Image>
@@ -79,10 +81,14 @@ export default function RootLayout({ children }) {
                       </svg>
                     )}
                   </IconButton>
+                 <Link href="#" className="flex items-center gap-1 bg-[#00a89d] font-semibold text-white px-3 py-1.5 rounded-lg">
+                 <PiPhoneCallBold className="text-xl" />
+                 Call Us
+                 </Link>
                 </div>
               </div>
-
               {openNav && <div className="lg:hidden">{navList}</div>}
+            
             </Navbar>
            
        <Banner></Banner>

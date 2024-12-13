@@ -25,7 +25,7 @@ const FAQ = () => {
  
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
     return (
-        <div className="my-20 w-9/12 mx-auto">
+        <div className="mb-20 mt-10 w-9/12 mx-auto">
             <h1 className="text-4xl font-semibold text-center">FAQ</h1>
 
             <Accordion open={open === 1} icon={<Icon id={1} open={open} />}>

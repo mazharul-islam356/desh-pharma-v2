@@ -1,24 +1,24 @@
 // Import React if you're using it directly in Next.js components
 import Image from "next/image";
-
 import { LuMessageSquare } from "react-icons/lu";
 import banner from '../../public/assets/images/banner.png'
+
 
 const Banner = () => {
     return (
         <div className="flex justify-start justify-items-center items-center h-screen">
             
-            <div className="w-8/12">
+            <div className="w-8/12 mt-6">
             <h1 className="text-5xl w-8/12 mx-auto text-center font-semibold">
             Your Trusted <span className="text-[#00a89d]">Health</span> Partner
             </h1>
-            <h5 className="w-7/12 mx-auto text-center text-lg">
+            <h5 className="w-7/12 mx-auto text-center text-lg mt-2">
             Providing reliable healthcare solutions, we are committed to your well-being. Count on us for quality medicines, expert advice, and exceptional service.
             </h5>
 
             <div className="flex justify-center items-center gap-8 mt-6 font-semibold mb-20">
-                <button className="flex items-center gap-1 px-10 py-3 rounded-3xl text-white bg-[#00a89d] ">
-                <LuMessageSquare />
+                <button className="flex items-center gap-2 px-10 py-3 rounded-3xl text-white bg-[#00a89d] ">
+                <LuMessageSquare className="text-xl font-semibold" />
                     Let's Talk</button>
                 
             </div>
