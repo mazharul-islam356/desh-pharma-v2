@@ -1,6 +1,6 @@
 'use client';
 import "./globals.css";
-import { Button, IconButton, Navbar, Typography } from "@material-tailwind/react";
+import { IconButton, Navbar, Typography } from "@material-tailwind/react";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import logo from '../public/assets/images/logo.png'
