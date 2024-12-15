@@ -6,7 +6,7 @@ import Image from 'next/image';
 const Contact = () => {
     return (
         <section id="aboutUs">
-
+<hr />
         <div className='bg-blue-800 text-white lg:mt-10 mt-32'>
 
           <div className='w-10/12 mx-auto rounded-md bg-gray-300 lg:h-64 justify-between items-center lg:flex lg:px-10 lg:py-12 py-6 flex lg:flex-row flex-col-reverse  relative bottom-28'>

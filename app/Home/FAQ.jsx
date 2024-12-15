@@ -10,9 +10,12 @@ import health from "../../public/assets/images/groceryShop.jpg";
 const FAQ = () => {
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
   return (
-    <div className="w-10/12 mx-auto flex flex-col justify-between mt-1">
+    <div>
+    <hr className="mb-8"/>
+      <div className="w-10/12 mx-auto flex flex-col justify-between mt-1">
       <div className="lg:flex mb-6 lg:h-[85vh] justify-between gap-5 items-center">
-        
+     
+
         <div  className="grid lg:grid-cols-2 gap-4 gap-x-6 justify-center lg:justify-normal">
 
           <div>
@@ -90,6 +93,7 @@ const FAQ = () => {
 
         </div>
       </div>
+    </div>
     </div>
   );
 };

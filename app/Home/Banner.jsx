@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { LuMessageSquare } from "react-icons/lu";
 import banner from '../../public/assets/images/doctor.jpg'
-import { Contact } from "lucide-react";
+import { Contact, Phone } from "lucide-react";
 
 
 const Banner = () => {
@@ -21,13 +21,13 @@ const Banner = () => {
             Providing reliable healthcare solutions, we are committed to your well-being. Count on us for quality medicines, expert advice, and exceptional service.
             </h5>
 
-            <div className="w-9/12 mx-auto flex justify-start items-center gap-8 mt-6 font-semibold lg:mb-20">
-                <button className="flex items-center gap-2 lg:px-10 px-6 lg:text-md text-sm py-2 lg:py-3 rounded-3xl text-white bg-blue-800 hover:bg-white hover:text-blue-800 transition ease-in-out hover:border-2 hover:border-blue-800 ">
+            <div className="w-9/12 mx-auto flex justify-start items-center gap-6 mt-6 font-semibold lg:mb-20">
+                <button className="flex items-center gap-2 lg:px-10 px-4 lg:text-md text-xs py-2 lg:py-3 rounded-3xl text-white bg-blue-800 hover:bg-white hover:text-blue-800 transition ease-in-out hover:border-2 hover:border-blue-800 ">
                 <LuMessageSquare className="text-xl font-semibold" />
                     Visit Us</button>
 
-                <button className="flex items-center gap-2 lg:px-10 lg:py-3 py-2 lg:text-md text-sm px-4 rounded-3xl text-white bg-green-500 hover:bg-white hover:text-green-500 transition ease-in-out hover:border-2 hover:border-green-500 ">
-                <Contact className="lg:text-xl font-semibold" />
+                <button className="flex items-center gap-2 lg:px-10 lg:py-3 py-2 lg:text-md text-xs px-3 rounded-3xl text-white bg-green-500 hover:bg-white hover:text-green-500 transition ease-in-out hover:border-2 hover:border-green-500 ">
+                <Phone size={20} className="lg:text-xl font-semibold " />
                    Contact Us</button>
                 
             </div>
