@@ -1,35 +1,34 @@
 import Image from "next/image";
-import commitment from '../../public/assets/images/6925414.jpg'
-import { IoMdArrowDropright } from "react-icons/io";
+import pharmacy from '../../public/assets/images/pharmecyDokan.jpg'
+
 
 const Commitment = () => {
     return (
-        <div className="w-10/12 mx-auto  flex flex-col justify-between mt-20">
-              <h1 className="text-4xl font-semibold text-center">Our Commitment to Quality</h1>
+        <div className="w-10/12 mx-auto mt-20">
 
-             <div className="flex mb-6  h-[85vh] justify-around gap-5 items-center">
+           <div className="lg:flex mb-6 lg:h-[85vh] justify-around gap-5 items-center">
+
+            {/* img */}
              <div>
-                <Image className="shadow-sm border mt-5 rounded-xl" alt="commitment" width={400} height={400} src={commitment}></Image>
+                <Image className="shadow-sm border lg:mt-5 rounded-xl" alt="commitment" width={500} height={600} src={pharmacy}></Image>
               </div>
 
-              <div>
-              
-              <h1 className="font-semibold text-2xl">
-              Ensuring Your Health and Safety
+              <div className="lg:mt-0 mt-6">
+              <span className=" text-blue-700 tracking-wider uppercase mb-4  lg:mt-0">About Desh Pharma</span>
+              <h1 className="font-semibold text-3xl lg:text-5xl mt-2">
+              Why Desh Pharma?
               </h1>
 
-              <p className="w-[39rem] text-justify mt-5 text-md">
-              At Desh Pharam, we are committed to providing the highest quality pharmaceutical services. Our team of experienced pharmacists meticulously checks every prescription to ensure accuracy and safety.
+              <p className="lg:w-[39rem] text-justify lg:mt-5 mt-2 text-md">
+              Desh Pharma has been serving the community since 2018. Being a community staple, we’ve proudly taken on the role of improving people’s health care by providing fast and personalized service. We strive to make every experience you have with us a great one. At our pharmacy, your family is our family. Our friendly pharmacists are dedicated to ensuring that you receive expert care on every visit. Stop by today and let AKS Pharmacy become part of your family.
               </p>
-              <p className="w-[39rem] text-justify mt-4 text-md">We source our medications from reputable suppliers and maintain strict quality control measures. Your health is our top priority, and we go above and beyond to meet and exceed industry standards.</p>
+             
 
-              <button className="bg-[#00a89d] mt-6 text-white rounded-md py-2 px-6 justify-center flex items-center text-center">Learn More About Our Proccess
-
-                <IoMdArrowDropright className="text-xl"></IoMdArrowDropright>
-              </button>
+            
 
               
               </div>
+
              </div>
 
 

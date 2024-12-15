@@ -20,8 +20,8 @@ export default function RootLayout({ children }) {
   }, []);
 
   const navList = (
-    <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6 lg:mr-20">
-      {['Home', 'Services', 'Contact', 'FAQ'].map((text) => (
+    <ul className="mt-2 mb-4 flex flex-col items-end justify-end gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+      {['Home', 'Services', 'Contact'].map((text) => (
         <Typography
           key={text}
           variant="small"
@@ -42,13 +42,18 @@ export default function RootLayout({ children }) {
         <nav>
           <div>
           
-            <Navbar className="shadow-sm border border-gray-300 relative top-4 bg-transparent z-10 h-max max-w-full  px-5 lg:px-8 lg:py-4 py-4 w-11/12 mx-auto">
-              <div className="flex items-center justify-between text-blue-gray-800">
-                <div className="font-semibold flex items-center">
+            <Navbar className=" border-gray-300 relative top-4 z-10 h-max max-w-full  px-5 lg:px-8 lg:py-4 py-4 w-11/12 mx-auto">
+              <div className="grid grid-cols-2 items-center justify-between text-blue-gray-800">
+                <div className="font-semibold">
                   <Image width={150} alt="logo" src={logo}></Image>
                 </div>
 
-                <div className="hidden lg:flex items-center">{navList}</div>
+                <div className="hidden lg:flex justify-end">{navList}
+                <Link href="#" className="flex items-center gap-1 bg-blue-800 text-white px-3 py-2 rounded-md ml-3">
+                 <PiPhoneCallBold className="text-xl" />
+                 Emargency call
+                 </Link>
+                </div>
 
                 <div className="flex items-center gap-4">
                   
@@ -81,13 +86,10 @@ export default function RootLayout({ children }) {
                       </svg>
                     )}
                   </IconButton>
-                 <Link href="#" className="flex items-center gap-1 bg-[#00a89d] font-semibold text-white px-3 py-1.5 rounded-lg">
-                 <PiPhoneCallBold className="text-xl" />
-                 Call Us
-                 </Link>
+                 
                 </div>
               </div>
-              {openNav && <div className="lg:hidden">{navList}</div>}
+              {openNav && <div className="lg:hidden items-end">{navList}</div>}
             
             </Navbar>
            

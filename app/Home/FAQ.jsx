@@ -1,66 +1,100 @@
 import React from "react";
-import {
-  Accordion,
-  AccordionHeader,
-  AccordionBody,
-} from "@material-tailwind/react";
- 
-function Icon({ id, open }) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      strokeWidth={2}
-      stroke="currentColor"
-      className={`${id === open ? "rotate-180" : ""} h-5 w-5 transition-transform`}
-    >
-      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-    </svg>
-  );
-}
+import Image from "next/image";
+
+import medicine from "../../public/assets/images/pharmecyDokan.jpg";
+import fruits from "../../public/assets/images//fruits.jpg";
+import personalCare from "../../public/assets/images/personalCare.jpg";
+import health from "../../public/assets/images/groceryShop.jpg";
+
+
 const FAQ = () => {
-
-    const [open, setOpen] = React.useState(0);
- 
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
-    return (
-        <div className="mb-20 mt-10 w-9/12 mx-auto">
-            <h1 className="text-4xl font-semibold text-center">FAQ</h1>
+  return (
+    <div className="w-10/12 mx-auto flex flex-col justify-between mt-1">
+      <div className="lg:flex mb-6 lg:h-[85vh] justify-between gap-5 items-center">
+        
+        <div  className="grid lg:grid-cols-2 gap-4 gap-x-6 justify-center lg:justify-normal">
 
-            <Accordion open={open === 1} icon={<Icon id={1} open={open} />}>
-        <AccordionHeader className="text-black mt-10 font-poppins" onClick={() => handleOpen(1)}>How do I transfer my prescription to Desh Pharam?</AccordionHeader>
-        <AccordionBody className='font-poppins text-gray-900 font-normal'>
-        Transferring your prescription is easy. Simply call our pharmacy or visit us in person with your current prescription information. Our staff will handle the transfer process for you, contacting your previous pharmacy if necessary.
-        </AccordionBody>
-      </Accordion>
-      <Accordion open={open === 2} icon={<Icon id={2} open={open} />}>
-        <AccordionHeader className="text-black font-poppins" onClick={() => handleOpen(2)}>
-        Do you offer home delivery for prescriptions?
-        </AccordionHeader>
-        <AccordionBody className='font-poppins text-gray-900 font-normal'>
-        Yes, we offer home delivery for prescriptions. You can request delivery when you refill your prescription online, through our mobile app, or by calling the pharmacy. We typically deliver within a 10-mile radius of our store.
-        </AccordionBody>
-      </Accordion>
-      <Accordion open={open === 3} icon={<Icon id={3} open={open} />}>
-        <AccordionHeader className="text-black font-poppins" onClick={() => handleOpen(3)}>
-        What are your pharmacy hours?
-        </AccordionHeader>
-        <AccordionBody className='font-poppins text-gray-900 font-normal'>
-        Our pharmacy is open 24/7 to serve you at any time. This includes holidays and weekends. Our pharmacists are always available for emergency consultations and prescription fills.
-        </AccordionBody>
-      </Accordion>
+          <div>
+          <div className="relative lg:bottom-12 group bg-cover w-72">
+        <Image className="rounded-xl" alt="img" height={100} width={300} src={fruits} />
+          <div className="absolute inset-0 bg-blue-900 bg-opacity-50 rounded-lg flex items-center justify-center opacity-100 transition-opacity">
+            <h2 className="text-white text-xl font-bold">Health & Nutrition</h2>
+          </div>
+        </div> 
+          </div>
 
-      <Accordion open={open === 4} icon={<Icon id={4} open={open} />}>
-        <AccordionHeader className="text-gray-900 font-poppins" onClick={() => handleOpen(4)}>
-       Can I get a consultation with a pharmacist?
-        </AccordionHeader>
-        <AccordionBody className='font-poppins text-gray-900 font-normal'>
-        Absolutely! Our pharmacists are available for consultations at any time. You can discuss your medications, potential side effects, drug interactions, or any other health concerns. No appointment is necessary for a consultation.
-        </AccordionBody>
-      </Accordion>
+          <div>
+          <div className="relative group bg-cover w-72">
+        <Image className="rounded-xl" alt="img" height={100} width={300} src={health} />
+          <div className="absolute inset-0 bg-blue-900 bg-opacity-50 rounded-lg flex items-center justify-center opacity-100 transition-opacity">
+            <h2 className="text-white text-xl font-bold">Home Essentials</h2>
+          </div>
+        </div> 
+          </div>
+
+          <div>
+          <div className="relative lg:bottom-10 group bg-cover w-72">
+        <Image className="rounded-xl" alt="img" height={100} width={300} src={personalCare} />
+          <div className="absolute inset-0 bg-blue-900 bg-opacity-50 rounded-lg flex items-center justify-center opacity-100 transition-opacity">
+            <h2 className="text-white text-xl font-bold">Personal Care</h2>
+          </div>
+        </div> 
+          </div>
+
+          <div>
+          <div className="relative group bg-cover w-72">
+        <Image className="rounded-xl" alt="img" height={100} width={300} src={medicine} />
+          <div className="absolute inset-0 bg-blue-900 bg-opacity-50 rounded-lg flex items-center justify-center opacity-100 transition-opacity">
+            <h2 className="text-white text-xl font-bold">Medical</h2>
+          </div>
+        </div> 
+
+          </div>
+
         </div>
-    );
+
+        <div className="lg:w-5/12 mx-auto mt-10 lg:mt-0">
+          <span className=" text-blue-700 tracking-wider uppercase mb-4">
+            Our product
+          </span>
+          <h1 className="font-semibold text-3xl lg:text-5xl mt-2">What Do We Offer?</h1>
+
+          <p className="lg:w-[39rem] text-justify lg:mt-5 mt-2 text-md">
+            We supply a wide range of products such as medicine, baby care,
+            sanitary, birth control, hygiene, diabetic kits & accessories,
+            dental care and surgical items, etc.
+          </p>
+
+          <div className="mt-4 text-gray-800">
+            <ul className="lg:space-y-2 space-y-1">
+              <li>
+                ✔️ Medicines include prescription, over-the-counter, and
+                complementary medicines (herbal and vitamins)
+              </li>
+              <li>
+                ✔️ Your trusted friendly vitamins and supplement store with
+                products that are 100% authentic
+              </li>
+              <li>
+                ✔️ Discover the best personal care products for all types of
+                skin that are also safe to apply on skin
+              </li>
+              <li>
+                ✔️ Essential things to buy that will make your life easier and
+                help you maintain a healthy lifestyle
+              </li>
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default FAQ;
+
+
+ 

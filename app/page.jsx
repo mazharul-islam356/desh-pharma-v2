@@ -14,11 +14,11 @@ export default function Home() {
       <div className="">
         <OurServices></OurServices>
         <WhyChoseUs></WhyChoseUs>
-        <HelthTips></HelthTips>
+       
         <Commitment></Commitment>
         <FAQ></FAQ>
         <Contact></Contact>
-        <Footer></Footer>
+        
       </div>
     </main>
   );
