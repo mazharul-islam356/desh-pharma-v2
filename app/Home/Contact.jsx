@@ -2,10 +2,11 @@ import React from 'react';
 import team from '../../public/assets/images/team.png'
 import Footer from './Footer';
 import Image from 'next/image';
+import { Phone } from 'lucide-react';
 
 const Contact = () => {
     return (
-        <section id="aboutUs">
+        <section>
 <hr />
         <div className='bg-blue-800 text-white lg:mt-10 mt-32'>
 
@@ -18,7 +19,9 @@ const Contact = () => {
             <span className='text-black text-center lg:text-start lg:text-lg text-sm'>Your health should not have to break the bank</span>
            </div>
             <div className='lg:flex-row flex justify-center lg:justify-normal lg:mt-4 mt-4'>
-            <button className='bg-blue-800 lg:py-3 lg:px-3 px-3 py-2 rounded-md text-sm'>Contact Us Now</button>
+            <a href={`tel:+880 1742-504941`}><button className='bg-blue-800 lg:py-3 lg:px-3 px-3 py-2 rounded-md text-sm flex items-center gap-2'> 
+              <Phone></Phone>
+              Contact Us Now</button></a>
             </div>
            </div>
 
@@ -36,9 +39,9 @@ const Contact = () => {
 
         <div className='lg:flex gap-10 items-center lg:gap-9 '>
           <p className='lg:w-8/12 leading-7 text-justify'>
-          Desh Pharmacy, the retail chain of AKS Khan Pharmaceuticals Ltd., is a new spin out venture from the Chairman of Bangladesh premier business conglomerates, A.K. Khan & Company Ltd.  with 70 years financial history, and a track record of successful investing, scaling and joint venturing. We work with industry leaders to source quality products for our esteemed and highly valued clients.</p>
+          Desh Pharmacy is a trusted retail chain that focuses on providing high-quality pharmaceutical products and healthcare essentials to its customers. It prioritizes customer satisfaction by sourcing authentic and reliable medicines, ensuring safety, and offering excellent service standards. The pharmacy is committed to maintaining high ethical practices and creating a dependable healthcare experience for its clients. </p>
           <p className='lg:w-8/12 leading-7 text-justify mt-10 lg:mt-0'>
-          A vertically integrated entity, which maintains quality control starting from importing finished and semi-finished drugs, to assembly and retail. With retail operations with stores located in heavy traffic areas to serve the customers 24 hours. With a pharmacist on site, customers can receive consultation around the clock.</p>
+          Vertically integrated pharmaceutical businesses ensure quality control and operational efficiency by managing the entire supply chain, from importing raw materials or semi-finished products to assembly and retail operations.</p>
         </div>
       </div>
         <hr className='mb-16 w-11/12 mx-auto' />

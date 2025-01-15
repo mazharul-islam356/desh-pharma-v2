@@ -10,7 +10,7 @@ import health from "../../public/assets/images/groceryShop.jpg";
 const FAQ = () => {
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
   return (
-    <div>
+    <section id="product">
     <hr className="mb-8"/>
       <div className="w-10/12 mx-auto flex flex-col justify-between mt-1">
       <div className="lg:flex mb-6 lg:h-[85vh] justify-between gap-5 items-center">
@@ -94,7 +94,7 @@ const FAQ = () => {
         </div>
       </div>
     </div>
-    </div>
+    </section>
   );
 };
 

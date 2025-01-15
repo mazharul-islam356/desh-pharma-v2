@@ -11,7 +11,7 @@ const WhyChoseUs = () => {
         <p className="text-sm md:text-base text-center lg:text-start">
           Genuine medicines and essentials at your convenience!
         </p>
-        <div className="text-3xl font-semibold mt-4">DESH PHARMA</div>
+        <div className="text-3xl font-semibold mt-4">DESH MODEL PHARMA</div>
       </div>
 
       {/* Right Section */}
@@ -24,7 +24,7 @@ const WhyChoseUs = () => {
             <i className="fas fa-store"></i>
           </div>
           <div>
-            <p className="text-lg font-bold">22+ Outlets</p>
+            <p className="text-lg font-bold">1+ Outlets</p>
             <p className="text-sm text-gray-500">Locate Your Store</p>
           </div>
         </div>

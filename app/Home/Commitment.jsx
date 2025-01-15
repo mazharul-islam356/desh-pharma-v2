@@ -20,7 +20,7 @@ const Commitment = () => {
               </h1>
 
               <p className="lg:w-[39rem] text-justify lg:mt-5 mt-2 text-md">
-              Desh Pharma has been serving the community since 2018. Being a community staple, we have proudly taken on the role of improving people's health care by providing fast and personalized service. We strive to make every experience you have with us a great one. At our pharmacy, your family is our family. Our friendly pharmacists are dedicated to ensuring that you receive expert care on every visit. Stop by today and let AKS Pharmacy become part of your family.
+              Desh Model Pharma has been serving the community since 2025. Being a community staple, we have proudly taken on the role of improving people's health care by providing fast and personalized service. We strive to make every experience you have with us a great one. At our pharmacy, your family is our family. Our friendly pharmacists are dedicated to ensuring that you receive expert care on every visit. Stop by today and let AKS Pharmacy become part of your family.
               </p>
              
 
